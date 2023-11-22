@@ -3,4 +3,7 @@
     <string name="beranda">Beranda</string>
     <string name="profile">Profile</string>
     <string name="about_image">about_image</string>
+    <string name="name">Rangga Arsy Prawira</string>
+    <string name="email">arsyrangga@gmail.com</string>
+    <string name="git_username">arsyrangga</string>
 </resources>

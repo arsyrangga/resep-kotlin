@@ -1,8 +1,6 @@
 package com.rangga.resepin.ui.components
 
-import android.view.Menu
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -17,12 +15,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import coil.compose.rememberAsyncImagePainter
-import com.rangga.resepin.R
 import com.rangga.resepin.ui.data.Recipe
 
 @Composable
@@ -30,12 +26,12 @@ fun CardComponent(
     recipe: Recipe,
     modifier: Modifier = Modifier,
 ) {
-    Card (
+    Card(
         modifier = modifier.width(140.dp),
         colors = CardDefaults.cardColors(
             containerColor = MaterialTheme.colorScheme.background,
         ),
-    ){
+    ) {
         Column {
             Image(
                 painter = rememberAsyncImagePainter(recipe.image),
